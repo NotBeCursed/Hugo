@@ -35,5 +35,5 @@ Once everything is configured, start the Hugo site by running the following comm
  ```
 - **Permissions issues**: Ensure that the `volumes-hugo-blogpost` volume has the appropriate permissions for the Hugo container.
 
-## Licence
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
