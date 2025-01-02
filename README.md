@@ -10,8 +10,8 @@ This Docker stack allows you to run a static website using Hugo, a fast static s
 
 1. **Clone the git repository:**
 ```bash
-    git clone https://github.com/YourUser/your-hugo-site.git
-    cd your-hugo-site
+    git clone  https://github.com/NotBeCursed/Hugo.git
+    cd hugo
 ```
 2. **Configuration:**
  - **HUGO_BASEURL** : Set this environment variable in the `docker-compose.yml` to specify the base URL for your Hugo site. The default is `http://localhost:1313`.
