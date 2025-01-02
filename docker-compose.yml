@@ -1,0 +1,23 @@
+services:
+  hugo:
+    hostname: hugo
+    container_name: hugo-blogpost
+    restart: unless-stopped
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      tags:
+        - hugo:latest
+      args:
+        HUGO_BASEURL: http://localhost:1313
+    tty: true
+    volumes:
+      - volumes-hugo-blogpost:/sites
+      # - ./sites:/sites # IF YOU WANT TO BE ABLE TO EDIT POSTS WITH YOUR USER
+    ports:
+      - 1313:1313
+
+volumes:
+  volumes-hugo-blogpost:
+    name: volume-hugo-blogpost
+    external: true
